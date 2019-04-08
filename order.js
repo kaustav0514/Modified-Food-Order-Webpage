@@ -103,13 +103,13 @@ function updateCartTotal() {
 	
 	total = Math.round(total * 100) / 100
 	if( total >=200 && total <=300)
-	{ discount = 10
+	{ discount = ((total*5)/100)
 	}
 	else if(total >300 && total <600)
-	{ discount = 20
+	{ discount = ((total*10)/100)
 	}
 	else if(total >=1000)
-	{ discount = 50
+	{ discount = ((total*20)/100)
 	}
 	else { discount = 0 }
 	
@@ -118,6 +118,7 @@ function updateCartTotal() {
 	document.getElementsByClassName('cart-discount-price')[0].innerText = 'Rs ' + discount
 	document.getElementsByClassName('cart-net-payable-price')[0].innerText = 'Rs ' + payable
 }
+//****** To add Collapse in starter/maincourse
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -133,7 +134,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-
+//****To validate phone number,email id
 function validate_func(inputtext,inputtext2)
 {
  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
