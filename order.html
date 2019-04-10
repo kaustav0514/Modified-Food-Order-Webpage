@@ -4,7 +4,7 @@
         <title>Gusteau's Kitchen</title>
         <link rel="stylesheet" href="styles.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="order.js" async></script>
 		<style>
 		@media (max-width: 800px) {
@@ -25,15 +25,16 @@
                     <li><a href="offers.html">OFFERS</a></li>
                     <li><a href="order.html">ORDER</a></li>
                     <li><a href="about.html">ABOUT</a></li>
+					<li><a href="login.html">LOGIN</a></li>
                 </ul>
             </nav>
             <h1 class="band-name band-name-large">GUSTEAU'S KITCHEN</h1>
         </header>
         <section class="container content-section">
-            <button class="collapsible">STARTERS
+            <button class="collapsible" data-toggle="collapse">STARTERS
 			<i class="down"></i>
 			</button>
-            <div class="shop-items">
+            <div class="shop-items" style="display:none;">
                 <div class="shop-item">
                     <span class="shop-item-title">Gobi 65</span>
                     <img class="shop-item-image" src="Images/GOBI.jpg">
@@ -57,14 +58,14 @@
                         <span class="shop-item-price">Rs 120.00</span>
                         <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
                     </div>
-                </div>
+                </div> 
             </div>
         </section>
 		
         <section class="container content-section">
             <button class="collapsible">MAIN COURSE<i class="down"></i>
 			</button>
-            <div class="shop-items">
+            <div class="shop-items" style="display:none;">
                 <div class="shop-item">
                     <span class="shop-item-title">RAJMA MASALA</span>
                     <img class="shop-item-image" src="Images/Rajma.jpg">
@@ -87,7 +88,7 @@
 		<section class="container content-section">
             <button class="collapsible">DESSERT<i class="down"></i>
 			</button>
-            <div class="shop-items">
+            <div class="shop-items" style="display:none;">
                 <div class="shop-item">
                     <span class="shop-item-title">Gulab Jamun(2 pieces)</span>
                     <img class="shop-item-image" src="Images/gulab jamun.jpg">
