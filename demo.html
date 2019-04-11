@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title> Page 1 - Codemaker</title>
+    </head>
+<body>
+<p> PIZZA ORDER FORM </p>
+<form name="input" action="popup" method="get">    <!-- builds form -->
+  Name:<input type="text" name="Name" value=" " size="20"><br>
+  Phone:<input type="text" name="Phone" value=" " size="13"><br>
+  Address:<input type="text" name="Address" value=" " size="100"><br/>
+  Amount:<input type="text" name="Amount" value=" " size="8"><br/>
+ </form>
+<script type="text/javascript" language="Javascript" >
+function show_confirm()
+{
+    var phone = document.forms['input']['Phone'].value;
+    var number = document.forms['input']['Amount'].value;
+    var message;
+    if(Number(number) > 1) {
+        message = "You ordered " + number + " pizzas. ";
+    } else {
+        message = "You ordered one pizza. ";
+    }
+    message += "You will recieve a call at " + phone + ".";
+    var r=confirm(message);// displays the message in a pop-up                                                                                                                                           window
+    if (r==true)                // on pop-up window is you select ok you
+    {
+        window.open('3b.html', 'popup', 'width=300,height=400');;   // are linked to secondary local page 
+    }
+    else                        // if you select cancel
+    {
+        window.open('3a.html', 'popup','width=300,height=400' );     // this message is displayed
+    }
+}
+</script>
+ <input type="button" onclick="show_confirm()" value="Order" />  
+ </body>
+ </html>
