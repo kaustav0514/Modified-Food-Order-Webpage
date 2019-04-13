@@ -22,8 +22,6 @@ function ready() {
         var button = addToCartButtons[i]
         button.addEventListener('click', addToCartClicked)
     }
-
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
 function purchaseClicked() {
@@ -170,6 +168,16 @@ var modal = document.getElementById('id01');
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
+    }
+}
+// To check if the cart is empty and click on procced to check out 
+document.getElementById('btn-purchase').addEventListener('click', iscartempty)
+
+function iscartempty(event) {
+	
+	var cart = document.getElementsByClassName('cart-total-price')[0].innerText
+	if(cart == 'Rs 0'){
+		alert('Please select a food item')
     }
 }
 

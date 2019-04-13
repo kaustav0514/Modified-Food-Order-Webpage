@@ -90,6 +90,14 @@ html, body {
     font-size: 2.5em;
 }
 
+.section-header-offers {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 3em;
+}
+
 .about-band-image {
     float: left;
     height: 200px;
@@ -173,7 +181,8 @@ html, body {
 
 .tour-item {
     display: inline-block;
-    padding-right: .5em;
+    padding-right: .5em
+	font-weight: bold;
 }
 
 .tour-date {
@@ -188,6 +197,8 @@ html, body {
 
 .tour-arena {
     width: 42%;
+	font-size: 15px;
+	font-style: italic;
 }
 
 .tour-btn {
@@ -363,10 +374,20 @@ html, body {
     font-size: 1.1em;
 }
 
-.btn-purchase {
+#btn-purchase {
+	background-color: skyblue;
     display: block;
-    margin: 40px auto 80px auto;
+	padding: 10px;
+    margin: 30px auto 60px auto;
+    font-size: 2em;
+	width: 300px;
+}
+
+.btn-offers {
+    display: block;
+    margin: 20px auto 60px auto;
     font-size: 1.75em;
+	width: 600px;
 }
 .collapsible {
   background-color: white;
@@ -473,7 +494,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #4CAF50;
+  background-color: skyblue;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -507,6 +528,10 @@ img.avatar {
 
 .container {
   padding: 16px;
+}
+
+.container-offers{
+  padding: 2px;
 }
 
 span.psw {
