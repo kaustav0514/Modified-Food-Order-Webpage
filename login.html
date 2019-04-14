@@ -18,16 +18,17 @@
 					<li><a href="login.html">LOGIN</a></li>
                 </ul>
             </nav>
-            <h1 class="band-name band-name-large">GK's</h1>
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+	<h1 class="band-name band-name-large">GK's</h1>	
+</header>	
+<button class="startlogin" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
 
 <div id="id01" class="modal">
   
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
-    </div>
+      </div>
 
     <div class="container">
       <label for="uname"><b>Username</b></label>
@@ -44,11 +45,32 @@
 
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
+      <span class="psw"> <a href="#">Forgot password?</a></span>
     </div>
   </form>
 </div>
-
+              <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">GK's</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="Images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="Images/Instagram Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
 
 </body>
 </html>
